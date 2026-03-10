@@ -38,10 +38,10 @@ function FeatureCard({ feature, index }) {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="group relative p-8 border border-gray-800 hover:border-cyber-blue transition-all duration-500 overflow-hidden"
+      initial={{ opacity: 0, y: 30 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      transition={{ duration: 0.4, delay: index * 0.05 }}
+      className="group relative p-8 border border-gray-800 hover:border-cyber-blue transition-all duration-300 overflow-hidden"
     >
       {/* Gradient background on hover */}
       <div className={`absolute inset-0 bg-gradient-to-br from-${feature.color}/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
@@ -63,9 +63,6 @@ function FeatureCard({ feature, index }) {
           {feature.description}
         </p>
       </div>
-      
-      {/* Scan line effect */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyber-blue/5 to-transparent transform translate-y-[-100%] group-hover:translate-y-[100%] transition-transform duration-1000"></div>
     </motion.div>
   )
 }

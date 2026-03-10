@@ -2,7 +2,7 @@
 
 A modern, immersive website for NovexOS - built with Next.js, Three.js, and Framer Motion.
 
-## Features
+## 🚀 Features
 
 - **3D Hero Section**: Interactive Three.js scene with particle effects and rotating core
 - **Responsive Design**: Fully responsive across all devices
@@ -10,7 +10,7 @@ A modern, immersive website for NovexOS - built with Next.js, Three.js, and Fram
 - **Cyber-tech Aesthetic**: Retro-futuristic design with neon accents and glitch effects
 - **Static Export**: Optimized for Cloudflare Pages deployment
 
-## Tech Stack
+## 📦 Tech Stack
 
 - **Framework**: Next.js 14 (App Router)
 - **3D Graphics**: Three.js with React Three Fiber
@@ -18,7 +18,7 @@ A modern, immersive website for NovexOS - built with Next.js, Three.js, and Fram
 - **Styling**: Tailwind CSS
 - **Fonts**: Orbitron (display) & Space Mono (body)
 
-## Installation
+## 🛠️ Installation
 
 ```bash
 # Install dependencies
@@ -36,7 +36,7 @@ npm run export
 
 The site will be available at `http://localhost:3000`
 
-## Deployment on Cloudflare Pages
+## 🌐 Deployment on Cloudflare Pages
 
 ### Method 1: GitHub Integration (Recommended)
 
@@ -67,7 +67,7 @@ wrangler pages deploy out --project-name=novexos
 
 No environment variables are required for this project.
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 novexos-website/
@@ -88,7 +88,7 @@ novexos-website/
 └── README.md
 ```
 
-## Design Philosophy
+## 🎨 Design Philosophy
 
 The website follows a **retro-futuristic cyber-tech aesthetic** to reflect NovexOS's custom-built nature:
 
@@ -97,7 +97,7 @@ The website follows a **retro-futuristic cyber-tech aesthetic** to reflect Novex
 - **Effects**: Glitch animations, neon glows, scan lines, particle fields, grain overlay
 - **Layout**: Asymmetric compositions with generous spacing
 
-## Customization
+## 🔧 Customization
 
 ### Colors
 
@@ -121,15 +121,15 @@ Modify `components/Hero3D.js` to customize the Three.js scene (particles, shapes
 
 Adjust Framer Motion settings in individual components for different animation timings and effects.
 
-## License
+## 📄 License
 
 This website is created for NovexOS by Omega Developments.
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Contact
+## 📧 Contact
 
 - **Website**: [omegadevelopmentsfr.dpdns.org](https://omegadevelopmentsfr.dpdns.org)
 - **Email**: omegadevelopmentsfr@gmail.com
@@ -137,4 +137,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-Built by Omega Developments
+Built with ⚡ by Omega Developments

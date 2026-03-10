@@ -2,19 +2,19 @@
 
 import { useRef, useMemo } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { OrbitControls, MeshDistortMaterial, Sphere, TorusKnot } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 import * as THREE from 'three'
 
 function ParticleField() {
   const points = useRef()
   
   const particlesPosition = useMemo(() => {
-    const positions = new Float32Array(5000 * 3)
+    const positions = new Float32Array(1500 * 3)
     
-    for (let i = 0; i < 5000; i++) {
-      const x = (Math.random() - 0.5) * 100
-      const y = (Math.random() - 0.5) * 100
-      const z = (Math.random() - 0.5) * 100
+    for (let i = 0; i < 1500; i++) {
+      const x = (Math.random() - 0.5) * 80
+      const y = (Math.random() - 0.5) * 80
+      const z = (Math.random() - 0.5) * 80
       
       positions.set([x, y, z], i * 3)
     }
@@ -40,11 +40,11 @@ function ParticleField() {
         />
       </bufferGeometry>
       <pointsMaterial
-        size={0.15}
+        size={0.2}
         color="#00d4ff"
         sizeAttenuation
         transparent
-        opacity={0.6}
+        opacity={0.5}
         blending={THREE.AdditiveBlending}
       />
     </points>
@@ -65,13 +65,12 @@ function FloatingCore() {
   return (
     <mesh ref={meshRef}>
       <icosahedronGeometry args={[2, 1]} />
-      <MeshDistortMaterial
+      <meshStandardMaterial
         color="#6c63ff"
-        attach="material"
-        distort={0.4}
-        speed={2}
         roughness={0.2}
         metalness={0.8}
+        emissive="#6c63ff"
+        emissiveIntensity={0.3}
       />
     </mesh>
   )
@@ -101,7 +100,15 @@ export default function Hero3D() {
       <div className="absolute inset-0">
         <Canvas
           camera={{ position: [0, 0, 15], fov: 75 }}
-          gl={{ alpha: true, antialias: true }}
+          gl={{ 
+            alpha: true, 
+            antialias: false,
+            powerPreference: 'high-performance',
+            stencil: false,
+            depth: false
+          }}
+          dpr={[1, 1.5]}
+          performance={{ min: 0.5 }}
         >
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} intensity={1} color="#00d4ff" />

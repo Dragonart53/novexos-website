@@ -54,7 +54,7 @@ export default function Download() {
                 <div className="text-5xl mb-4">💿</div>
                 <h3 className="font-display text-2xl font-bold mb-3 text-cyber-blue">ISO IMAGE</h3>
                 <p className="font-body text-gray-400 text-sm mb-6">
-                  Bootable ISO for VM or physical machine
+                  Bootable ISO for QEMU or VirtualBox
                 </p>
                 <a
                   href="https://github.com/omegadevelopmentsfr/NovexOS/releases"
