@@ -3,30 +3,31 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { CustomKernelIcon, SecureIcon, PerformanceIcon, OpenSourceIcon } from './FeatureIcons'
 
 const features = [
   {
     title: 'CUSTOM KERNEL',
     description: 'Built entirely from scratch with no external OS base. Complete control over memory management, process scheduling, and system architecture.',
-    icon: '⚡',
+    Icon: CustomKernelIcon,
     color: 'cyber-blue',
   },
   {
     title: 'SECURE BY DESIGN',
     description: 'Memory safety and privilege separation baked in from day one. Security is not an afterthought - it\'s foundational.',
-    icon: '🛡️',
+    Icon: SecureIcon,
     color: 'cyber-purple',
   },
   {
     title: 'PERFORMANCE FIRST',
     description: 'Lightweight architecture with zero unnecessary overhead. Every byte of code serves a purpose.',
-    icon: '🚀',
+    Icon: PerformanceIcon,
     color: 'cyber-green',
   },
   {
     title: 'OPEN SOURCE',
     description: 'Free to use and integrate with mandatory attribution. Community-driven development with transparent roadmap.',
-    icon: '💎',
+    Icon: OpenSourceIcon,
     color: 'cyber-pink',
   },
 ]
@@ -34,6 +35,13 @@ const features = [
 function FeatureCard({ feature, index }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
+  
+  const glowClasses = {
+    'cyber-blue': 'group-hover:icon-glow-blue',
+    'cyber-purple': 'group-hover:icon-glow-purple',
+    'cyber-green': 'group-hover:icon-glow-green',
+    'cyber-pink': 'group-hover:icon-glow-pink',
+  }
   
   return (
     <motion.div
@@ -51,8 +59,8 @@ function FeatureCard({ feature, index }) {
       <div className={`absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-${feature.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
       
       <div className="relative z-10">
-        <div className="text-4xl sm:text-5xl mb-4 sm:mb-6 transform group-hover:scale-110 transition-transform duration-300">
-          {feature.icon}
+        <div className={`mb-4 sm:mb-6 transform group-hover:scale-110 transition-all duration-300 ${glowClasses[feature.color]}`}>
+          <feature.Icon className={`w-12 h-12 sm:w-16 sm:h-16 text-${feature.color}`} />
         </div>
         
         <h3 className={`font-display text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-${feature.color} group-hover:neon-text transition-all duration-300`}>

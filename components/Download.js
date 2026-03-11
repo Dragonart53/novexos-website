@@ -138,12 +138,12 @@ export default function Download() {
                 <span className="text-gray-400 break-all">Clone the repository: <code className="text-cyber-green bg-gray-900 px-1 sm:px-2 py-1 text-xs">git clone https://github.com/omegadevelopmentsfr/NovexOS.git</code></span>
               </div>
               <div className="flex items-start gap-2 sm:gap-3">
-                <span className="text-cyber-blue flex-shrink-0 mt-1">2.1.</span>
-                <span className="text-gray-400">Build the ISO: <code className="text-cyber-green bg-gray-900 px-1 sm:px-2 py-1 text-xs">make build</code></span>
+                <span className="text-cyber-blue flex-shrink-0 mt-1">2.</span>
+                <span className="text-gray-400">Build the ISO: <code className="text-cyber-green bg-gray-900 px-1 sm:px-2 py-1 text-xs">make iso</code></span>
               </div>
               <div className="flex items-start gap-2 sm:gap-3">
-                <span className="text-cyber-blue flex-shrink-0 mt-1">2.2.</span>
-                <span className="text-gray-400">Run and build in QEMU: <code className="text-cyber-green bg-gray-900 px-1 sm:px-2 py-1 text-xs">make run</code></span>
+                <span className="text-cyber-blue flex-shrink-0 mt-1">3.</span>
+                <span className="text-gray-400">Run in QEMU: <code className="text-cyber-green bg-gray-900 px-1 sm:px-2 py-1 text-xs">make run</code></span>
               </div>
             </div>
           </motion.div>

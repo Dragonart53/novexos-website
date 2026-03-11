@@ -65,7 +65,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-gray-800 pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 text-center md:text-left">
           <p className="font-body text-gray-500 text-xs">
-            © 2026 Omega Developments. Licensed under CC BY-ND 4.0
+            © 2025 Omega Developments. Licensed under CC BY-ND 4.0
           </p>
           
           <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 font-body text-xs text-gray-500">
