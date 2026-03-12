@@ -71,7 +71,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 font-body text-xs text-gray-500">
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 bg-cyber-green rounded-full animate-pulse"></span>
-              VERSION 0.6.0-ALPHA
+              VERSION 0.7.0-ALPHA
             </span>
             <span>BUILT WITH DEDICATION</span>
           </div>

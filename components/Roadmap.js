@@ -16,6 +16,7 @@ const roadmapItems = [
       'Physical & virtual memory manager',
       'Keyboard & PS/2 driver',
       'Basic shell (NovexShell)',
+      'NovexDE desktop environment',
     ],
   },
   {
@@ -36,7 +37,6 @@ const roadmapItems = [
       'NovexFS custom filesystem',
       'ELF binary loader',
       'Networking stack (TCP/IP)',
-      'NovexDE desktop environment',
       'Package manager',
       'Multi-core support (SMP)',
     ],
