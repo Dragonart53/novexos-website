@@ -298,7 +298,7 @@ export default function Hero3D() {
           <div className="mt-12 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-3xl mx-auto px-4">
             <div className="group">
               <div className="text-2xl sm:text-3xl md:text-4xl font-display font-black text-cyber-blue group-hover:text-cyber-green transition-colors">
-                0.7.1
+                0.7.2
               </div>
               <div className="text-xs sm:text-sm font-body text-gray-400 mt-1 sm:mt-2">CURRENT VERSION</div>
             </div>
