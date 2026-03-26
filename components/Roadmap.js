@@ -17,6 +17,7 @@ const roadmapItems = [
       'Keyboard & PS/2 driver',
       'Basic shell (NovexShell)',
       'NovexDE desktop environment',
+      'Python 3 integration (NovexPY)',
     ],
   },
   {
