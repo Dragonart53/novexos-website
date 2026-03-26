@@ -28,7 +28,7 @@ const roadmapItems = [
       'FAT32 support',
       'NTFS support',
       'Ext4 support',
-      'basic application for the OS'
+      'basic application for the OS',
     ],
   },
   {
