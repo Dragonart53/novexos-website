@@ -22,12 +22,13 @@ const roadmapItems = [
   },
   {
     status: 'progress',
-    title: 'FILE SYSTEMS',
+    title: 'SYSTEM & APPLICATIONS',
     items: [
       'OS installer (NovexInstaller)',
       'FAT32 support',
       'NTFS support',
       'Ext4 support',
+      'basic application for the OS'
     ],
   },
   {
