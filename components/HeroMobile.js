@@ -80,7 +80,7 @@ export default function HeroMobile() {
           <div className="mt-12 grid grid-cols-3 gap-4">
             <div className="group">
               <div className="text-2xl font-display font-black text-cyber-blue">
-                0.8
+                0.8.1
               </div>
               <div className="text-xs font-body text-gray-400 mt-1">VERSION</div>
             </div>
